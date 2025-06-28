@@ -4,7 +4,7 @@ with open("README.md", "r") as f:
     description = f.read()
 
 setup(
-    name='nadex',
+    name='nadex-cli',
     version='1.0.0',
     packages=find_packages(),
     include_package_data=True,

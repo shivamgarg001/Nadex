@@ -1,0 +1,2 @@
+[console_scripts]
+nadex_dashboard = nadex_dashboard:cli_entry
