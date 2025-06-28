@@ -1,6 +1,6 @@
-# 📈 nadex — Real-Time 5-Minute Binary Options Market Data CLI
+# 📈 NADEX — Real-Time 5-Minute Binary Options Market Data CLI
 
-`nadex` is a powerful Python CLI tool that fetches **live 5-minute binary options forex data** directly from the Nadex exchange. With a single command, you can access comprehensive market data including all available forex pairs, trading levels (strikes), bid/ask prices, and order book quantities — transforming your terminal into a real-time trading dashboard.
+`NADEX` is a powerful Python CLI tool that fetches **live 5-minute binary options forex data** directly from the Nadex exchange. With a single command, you can access comprehensive market data including all available forex pairs, trading levels (strikes), bid/ask prices, and order book quantities — transforming your terminal into a real-time trading dashboard.
 
 Perfect for traders, developers, and financial analysts who need instant access to Nadex's binary options market structure and live pricing data.
 
@@ -13,7 +13,7 @@ Perfect for traders, developers, and financial analysts who need instant access 
 - 📊 **Full order book visualization** in your terminal
 - 🔐 **Built-in test credentials** (easily replaceable with your own)
 - 🎯 **Clean, parsable CLI output** for both human reading and automation
-- 🐍 **One-command installation** via PyPI (`pip install nadex`)
+- 🐍 **One-command installation** via PyPI (`pip install nadex-cli`)
 - 🌐 **WebSocket streaming** for real-time updates
 - 📈 **Professional-grade market data** from Nadex exchange
 
@@ -24,7 +24,7 @@ Perfect for traders, developers, and financial analysts who need instant access 
 Install the package globally using pip:
 
 ```bash
-pip install nadex
+pip install nadex-cli
 ```
 
 That's it! No additional setup required.

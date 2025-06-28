@@ -14,17 +14,16 @@ load_dotenv()
 
 class Config:
     # Authentication
-    NADEX_USERNAME = os.getenv('NADEX_USERNAME')
-    NADEX_PASSWORD = os.getenv('NADEX_PASSWORD')
-    NADEX_USER_ID = os.getenv('NADEX_USER_ID')
+    NADEX_USERNAME = os.getenv('NADEX_USERNAME', 'demo-shivam001')
+    NADEX_PASSWORD = os.getenv('NADEX_PASSWORD', 'cBj2AfSSAX4NBXc')
+    NADEX_USER_ID = os.getenv('NADEX_USER_ID', 'SHIVAM001')
     
-    # API URLs
-    NADEX_AUTH_URL = os.getenv('NADEX_AUTH_URL')
-    NADEX_SESSION_URL = os.getenv('NADEX_SESSION_URL')
-    NADEX_MARKET_TREE_URL = os.getenv('NADEX_MARKET_TREE_URL')
-    NADEX_NAVIGATION_URL = os.getenv('NADEX_NAVIGATION_URL')
-    FRONTEND_PORT = os.getenv('FRONTEND_PORT')
-    # WebSocket Configuration
+    NADEX_AUTH_URL = os.getenv('NADEX_AUTH_URL', 'https://demo-trade.nadex.com/iDeal/v2/security/authenticate')
+    NADEX_SESSION_URL = os.getenv('NADEX_SESSION_URL', 'https://demo-upd.nadex.com/lightstreamer/create_session.js')
+    NADEX_MARKET_TREE_URL = os.getenv('NADEX_MARKET_TREE_URL', 'https://demo-trade.nadex.com/iDeal/markets/hierarchy/tree/full')
+    NADEX_NAVIGATION_URL = os.getenv('NADEX_NAVIGATION_URL', 'https://demo-trade.nadex.com/iDeal/markets/navigation')
+    FRONTEND_PORT = os.getenv('FRONTEND_PORT', '8765')
+
     PING_INTERVAL = int(os.getenv('PING_INTERVAL', 30))
     RESUBSCRIBE_INTERVAL = int(os.getenv('RESUBSCRIBE_INTERVAL', 300))
     INITIAL_TABLE_COUNTER = int(os.getenv('INITIAL_TABLE_COUNTER', 15))
