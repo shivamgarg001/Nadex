@@ -1,13 +1,21 @@
+# ---------------------------------------------------------------
+# File        : main.py
+# Author      : Shivam Garg
+# Created on  : 27-06-2005
+
+# Copyright (c) Shivam Garg. All rights reserved.
+# ---------------------------------------------------------------
+
 import asyncio
 import signal
 import sys
 import websockets
 import contextlib
 
-from config import Config
-from helpers import get_session_info, fetch_market_tree, extract_forex_ids, map_market_data, print_market_mapping
-from websocket_manager import WebSocketManager
-from frontend import frontend_handler, close_all_frontend_connections
+from .config import Config
+from .helpers import get_session_info, fetch_market_tree, extract_forex_ids, map_market_data, print_market_mapping
+from .websocket_manager import WebSocketManager
+from .frontend import frontend_handler, close_all_frontend_connections
 
 # Global shutdown event
 shutdown_event = asyncio.Event()
@@ -63,6 +71,17 @@ async def main():
         server.close()
         await server.wait_closed()
         print("[+] All done. Bye.")
+
+def cli_entry():
+    try:
+        asyncio.run(main())
+    except KeyboardInterrupt:
+        print("\n[!] Interrupted by user")
+    except Exception as e:
+        print(f"[ERROR] {e}")
+        sys.exit(1)
+    else:
+        sys.exit(0)
 
 if __name__ == "__main__":
     try:

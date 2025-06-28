@@ -1,3 +1,11 @@
+# ---------------------------------------------------------------
+# File        : frontend.py
+# Author      : Shivam Garg
+# Created on  : 27-06-2005
+
+# Copyright (c) Shivam Garg. All rights reserved.
+# ---------------------------------------------------------------
+
 import asyncio
 import websockets
 import json

@@ -1,4 +1,12 @@
-from config import Config
+# ---------------------------------------------------------------
+# File        : messages.py
+# Author      : Shivam Garg
+# Created on  : 27-06-2005
+
+# Copyright (c) Shivam Garg. All rights reserved.
+# ---------------------------------------------------------------
+
+from .config import Config
 
 class WebSocketMessages:
     """Class to handle all WebSocket message templates"""

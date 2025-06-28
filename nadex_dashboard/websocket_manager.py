@@ -1,14 +1,22 @@
+# ---------------------------------------------------------------
+# File        : websocket_manager.py
+# Author      : Shivam Garg
+# Created on  : 27-06-2005
+
+# Copyright (c) Shivam Garg. All rights reserved.
+# ---------------------------------------------------------------
+
 import asyncio
 import datetime
 import time
 import websockets
 from collections import defaultdict
 
-from config import Config
-from messages import WebSocketMessages, MessageTable
-from parsing import update_table_mapping, clear_table_mapping, process_message
-from frontend import relay_to_frontend
-from helpers import fetch_market_tree, extract_forex_ids, map_market_data
+from .config import Config
+from nadex_dashboard.messages import WebSocketMessages, MessageTable
+from .parsing import update_table_mapping, clear_table_mapping, process_message
+from .frontend import relay_to_frontend
+from .helpers import fetch_market_tree, extract_forex_ids, map_market_data
 
 class WebSocketManager:
     """Manages WebSocket connections and subscriptions to Nadex."""

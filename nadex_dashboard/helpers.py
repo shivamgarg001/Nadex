@@ -1,8 +1,16 @@
+# ---------------------------------------------------------------
+# File        : helpers.py
+# Author      : Shivam Garg
+# Created on  : 27-06-2005
+
+# Copyright (c) Shivam Garg. All rights reserved.
+# ---------------------------------------------------------------
+
 import requests
 import re
 from collections import defaultdict
 
-from config import (
+from .config import (
     Config,
     AUTH_HEADERS,
     SESSION_HEADERS,
