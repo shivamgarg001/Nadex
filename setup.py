@@ -5,7 +5,7 @@ with open("README.md", "r") as f:
 
 setup(
     name='nadex-cli',
-    version='1.0.0',
+    version='1.0.1',
     packages=find_packages(),
     include_package_data=True,
     install_requires=[
@@ -20,4 +20,5 @@ setup(
     },
     long_description=description,
     long_description_content_type="text/markdown",
+    keywords=('nadex ', 'nadex-binary-options ', 'nadex-forex ', 'nadex-real-time ', 'nadex-market-data ', 'nadex-cli ', 'nadex-dashboard ', 'nadex-websocket ', 'nadex-trading ', 'nadex-finance ', 'nadex-python ', 'nadex-pip-install ', 'nadex-automation ', 'nadex-order-book', 'binary-options ', 'forex ', 'real-time ', 'market-data ', 'cli ', 'dashboard ', 'websocket ', 'trading ', 'finance ', 'python ', 'pip-install ', 'automation ', 'order-book', 'nadex pypi ', 'pypi nadex ', 'pip nadex ', 'pip i nadex-cli ', 'pypi nadex-cli ', 'pip nadex '),
 )

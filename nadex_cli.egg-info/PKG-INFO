@@ -1,6 +1,7 @@
 Metadata-Version: 2.4
 Name: nadex-cli
-Version: 1.0.0
+Version: 1.0.1
+Keywords: nadex ,nadex-binary-options ,nadex-forex ,nadex-real-time ,nadex-market-data ,nadex-cli ,nadex-dashboard ,nadex-websocket ,nadex-trading ,nadex-finance ,nadex-python ,nadex-pip-install ,nadex-automation ,nadex-order-book,binary-options ,forex ,real-time ,market-data ,cli ,dashboard ,websocket ,trading ,finance ,python ,pip-install ,automation ,order-book,nadex pypi ,pypi nadex ,pip nadex ,pip i nadex-cli ,pypi nadex-cli ,pip nadex 
 Description-Content-Type: text/markdown
 License-File: LICENSE
 Requires-Dist: python-dotenv
@@ -8,6 +9,7 @@ Requires-Dist: requests
 Requires-Dist: websockets
 Dynamic: description
 Dynamic: description-content-type
+Dynamic: keywords
 Dynamic: license-file
 Dynamic: requires-dist
 
