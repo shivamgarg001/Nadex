@@ -70,62 +70,6 @@ The package comes with **built-in test credentials** that connect to Nadex's dem
 - ✅ Perfect for learning and development
 - ✅ No registration required
 
-### Using Your Own Credentials
-
-If you have a Nadex account and want to use your own credentials:
-
-#### Method 1: Environment Variables
-```bash
-export NADEX_USERNAME=your-username
-export NADEX_PASSWORD=your-password
-nadex_dashboard
-```
-
-#### Method 2: .env File
-Create a `.env` file in your working directory:
-```env
-NADEX_USERNAME=your-username
-NADEX_PASSWORD=your-password
-```
-
-Then run the command as usual:
-```bash
-nadex_dashboard
-```
-
-#### Method 3: Direct Configuration
-```python
-# Custom script using the package
-from nadex_dashboard import NadexClient
-
-client = NadexClient(
-    username="your-username",
-    password="your-password"
-)
-client.start_dashboard()
-```
-
----
-
-## 🏗️ Architecture & Project Structure
-
-```
-nadex/
-├── nadex_dashboard/
-│   ├── __init__.py              # Package initialization
-│   ├── config.py                # Configuration and environment handling
-│   ├── helpers.py               # Utility functions and data processing
-│   ├── messages.py              # WebSocket message formats and protocols
-│   ├── parsing.py               # Market data parsing and validation
-│   ├── dashboard.py             # CLI formatting and display logic
-│   ├── websocket_manager.py     # WebSocket connection management
-│   └── __main__.py              # CLI entry point
-├── setup.py                     # Package configuration
-├── requirements.txt             # Dependencies
-├── README.md                    # This file
-└── LICENSE                      # MIT License
-```
-
 ---
 
 ## 📊 Market Data Specifications
@@ -144,14 +88,11 @@ nadex/
 ### Local Development Setup
 ```bash
 # Clone the repository
-git clone https://github.com/shivamgarg-dev/nadex-dashboard.git
+git clone https://github.com/shivamgarg001/Nadex.git
 cd nadex-dashboard
 
 # Install in development mode
 pip install -e .
-
-# Run tests
-python -m pytest tests/
 
 # Run the CLI
 nadex_dashboard
