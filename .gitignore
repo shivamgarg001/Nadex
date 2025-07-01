@@ -4,3 +4,4 @@ pypi_recovery_codes.txt
 /nadex_cli.egg-info/
 /analysis.ipynb
 /logs.txt
+/pypi-credentials
